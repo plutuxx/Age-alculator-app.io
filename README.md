@@ -1,6 +1,6 @@
-# Frontend Mentor - Newsletter sign-up form with success message solution
+# Frontend Mentor - Age calculator app solution
 
-This is a solution to the [Newsletter sign-up form with success message challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/newsletter-signup-form-with-success-message-3FC1AZbNrv). Frontend Mentor challenges help you improve your coding skills by building realistic projects. 
+This is a solution to the [Age calculator app challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/age-calculator-app-dF9DFFpj-Q). Frontend Mentor challenges help you improve your coding skills by building realistic projects. 
 
 ## Table of contents
 
@@ -14,8 +14,8 @@ This is a solution to the [Newsletter sign-up form with success message challeng
 
 ### Links
 
-- [Frontend Mentor Solution](https://www.frontendmentor.io/solutions/newsletter-signup-form-with-success-message-oDbhdF3CxC)
-- [Live Site](https://plutuxx.github.io/Newsletter-sign-up-form-with-success-message.io/)
+- [Frontend Mentor Solution](https://www.frontendmentor.io/solutions/age-calculator-app-XQeYVwIHis)
+- [Live Site](https://plutuxx.github.io/Age-alculator-app.io/)
 
 ## Author
 
