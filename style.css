@@ -1,0 +1,280 @@
+:root {
+    --Purple: hsl(259, 100%, 65%);
+    --Light-red: hsl(0, 100%, 67%);
+    --White: hsl(0, 0%, 100%);
+    --Off-white: hsl(0, 0%, 94%);
+    --Light-grey: hsl(0, 0%, 86%);
+    --Smokey-grey: hsl(0, 1%, 44%);
+    --Off-black: hsl(0, 0%, 8%);
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+html {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--Off-white);
+}
+
+.container {
+    width: 100%;
+    max-width: 600px;
+    margin: 0 20px;
+    padding: 40px 35px;
+    border-radius: 15px 15px 150px 15px;
+    background-color: var(--White);
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.input-section {
+    width: 100%;
+    height: auto;
+    position: relative;
+    display: flex;
+    justify-content: start;
+    align-items: start;
+    padding-bottom: 30px;
+    border-bottom: 1px solid var(--Light-grey);
+}
+
+.day-box,
+.month-box,
+.year-box {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+}
+
+.day-box {
+    margin: 0 10px 0 0;
+}
+
+.month-box {
+    margin: 0 10px;
+}
+
+.year-box {
+    margin: 0 0 0 10px;
+}
+
+.day-box label,
+.month-box label,
+.year-box label {
+    margin-bottom: 5px;
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    color: var(--Smokey-grey);
+}
+
+.day-box input,
+.month-box input,
+.year-box input {
+    width: 120px;
+    height: 59px;
+    padding: 15px;
+    outline: none;
+    border: 1px solid var(--Light-grey);
+    border-radius: 7px;
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.day-box input:focus,
+.month-box input:focus,
+.year-box input:focus {
+    border-color: var(--Purple);
+}
+
+.error-text {
+    margin-top: 5px;
+    font-size: 10px;
+    color: var(--Light-red);
+    transition: all, 0.4s ease;
+}
+
+.btn {
+    width: 65px;
+    height: 65px;
+    position: absolute;
+    right: 0;
+    bottom: -32.5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+    border: none;
+    border-radius: 50%;
+    background-color: var(--Purple);
+    transition: all, 0.4s ease;
+}
+
+.btn:hover {
+    background: var(--Off-black);
+}
+
+.btn img {
+    width: 35px;
+}
+
+.result-section {
+    width: 100%;
+    padding-top: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+
+.day-result-box,
+.month-result-box,
+.year-result-box {
+    display: flex;
+    align-items: center;
+    font-size: 61px;
+    font-weight: 800;
+    text-wrap: nowrap;
+    transition: all, 0.4s ease;
+}
+
+.day-result-box .result,
+.month-result-box .result,
+.year-result-box .result {
+    color: var(--Purple);
+}
+
+@media (510px < width < 600px) {
+    .input-section {
+        justify-content: center;
+        padding-bottom: 60px;
+    }
+
+    .btn {
+        transform: translateX(-50%);
+        left: 50%;
+    }
+}
+
+@media (410px < width <= 510px) {
+    .container {
+        padding: 40px 25px;
+    }
+
+    .input-section {
+        justify-content: center;
+        padding-bottom: 60px;
+    }
+
+    .day-box label,
+    .month-box label,
+    .year-box label {
+        font-size: 12px;
+    }
+
+    .day-box input,
+    .month-box input,
+    .year-box input {
+        width: 93px;
+        height: 55px;
+        font-size: 24px;
+    }
+
+    .error-text {
+        font-size: 9px;
+    }
+
+    .btn {
+        width: 60px;
+        height: 60px;
+        transform: translateX(-50%);
+        bottom: -30px;
+        left: 50%;
+    }
+
+    .btn img {
+        width: 30px;
+    }
+
+    .result-section {
+        padding-top: 50px;
+    }
+
+    .day-result-box,
+    .month-result-box,
+    .year-result-box {
+        font-size: 51px;
+    }
+
+
+}
+
+@media (width <= 410px) {
+    .container {
+        padding: 40px 25px;
+    }
+
+    .input-section {
+        justify-content: center;
+        padding-bottom: 14.63vw;
+    }
+
+    .day-box label,
+    .month-box label,
+    .year-box label {
+        font-size: 2.68vw;
+    }
+
+
+    .day-box input,
+    .month-box input,
+    .year-box input {
+        width: 20.97vw;
+        height: 10.7vw;
+        padding: 3.65vw;
+        font-size: 5.12vw;
+    }
+
+    .error-text {
+        font-size: 1.9vw;
+    }
+
+    .result-section {
+        padding-top: 12.19vw;
+    }
+
+    .day-result-box,
+    .month-result-box,
+    .year-result-box {
+        font-size: 11.95vw;
+    }
+
+    .btn {
+        width: 14.63vw;
+        height: 14.63vw;
+        transform: translateX(-50%);
+        bottom: -7.315vw;
+        left: 50%;
+    }
+
+    .btn img {
+        width: 7.31vw;
+    }
+}
